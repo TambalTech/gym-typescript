@@ -1,6 +1,3 @@
-import { li } from "framer-motion/client";
-
-
 type Props = {
     name: string;
     description?: string;

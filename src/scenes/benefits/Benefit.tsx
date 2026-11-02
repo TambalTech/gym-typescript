@@ -1,5 +1,6 @@
 import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
+import type { ReactNode } from 'react';
 import * as AnchorLinkModule from "react-anchor-link-smooth-scroll";
 const AnchorLink = (AnchorLinkModule.default as any).default;
  
@@ -8,7 +9,7 @@ const childVariant = {
     visible: {opacity: 1, scale: 1}
 }
 type Props = {
-    icon: JSX.Element;
+    icon: ReactNode;
     title:string;
     description: string;
     setSelectedPage:( value: SelectedPage) => void;

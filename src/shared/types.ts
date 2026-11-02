@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 export enum SelectedPage{
   Home="home",
   Benefits="benefits",
@@ -6,7 +7,7 @@ export enum SelectedPage{
 }
 
 export interface BenefitType {
-  icon: JSX.Element;
+  icon: ReactNode;
   title: string;
   description: string
 }
